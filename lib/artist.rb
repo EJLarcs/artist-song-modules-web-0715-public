@@ -1,3 +1,4 @@
+require_relative 'song'
 class Artist
   attr_accessor :name
   attr_reader :songs
@@ -26,7 +27,8 @@ class Artist
 
   def add_song(song)
     @songs << song
-    song.artist = self
+    # song.artist = self
+    # songs.each { |song| @songs << song }
   end
 
   def add_songs(songs)
